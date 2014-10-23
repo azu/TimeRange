@@ -5,11 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/TimeRange.svg?style=flat)](http://cocoadocs.org/docsets/TimeRange)
 [![Platform](https://img.shields.io/cocoapods/p/TimeRange.svg?style=flat)](http://cocoadocs.org/docsets/TimeRange)
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -17,6 +12,14 @@ TimeRange is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
     pod "TimeRange"
+
+
+## Usage
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
 
 ## Author
 

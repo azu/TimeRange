@@ -6,6 +6,5 @@ end
 
 target 'Tests', :exclusive => true do
   pod "TimeRange", :path => "../"
-
-  
+  pod 'XCParameterizedTestCase'
 end

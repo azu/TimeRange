@@ -1,0 +1,17 @@
+PODS:
+  - TimeRange (0.1.0)
+  - XCParameterizedTestCase (1.0.1)
+
+DEPENDENCIES:
+  - TimeRange (from `../`)
+  - XCParameterizedTestCase
+
+EXTERNAL SOURCES:
+  TimeRange:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TimeRange: a76b5bc8a5e563fd8ee41225b0d4b8656850b53c
+  XCParameterizedTestCase: 84ec9dcb08fdfe0afc19d26771ae70c771af44ff
+
+COCOAPODS: 0.34.4
