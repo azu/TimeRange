@@ -26,6 +26,8 @@ You can try to:
 pod try "TimeRange"
 ```
 
+![img](http://monosnap.com/image/9NniA7H5i5cnpBnCnC0YU77aPnjbVY.png)
+
 ### API
 
 

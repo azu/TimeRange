@@ -1,38 +1,15 @@
-#
-# Be sure to run `pod lib lint TimeRange.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = "TimeRange"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of TimeRange."
-  s.description      = <<-DESC
-                       An optional longer description of TimeRange
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/TimeRange"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.name        = "TimeRange"
+  s.version     = "0.1.0"
+  s.summary     = "TimeRange provide check if an NSDate occurs between two other NSDates."
+  s.homepage         = "https://github.com/azu/TimeRange"
+  s.screenshots      = "http://monosnap.com/image/9NniA7H5i5cnpBnCnC0YU77aPnjbVY.png"
   s.license          = 'MIT'
-  s.author           = { "azu" => "azuciao@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/TimeRange.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = {"azu" => "azuciao@gmail.com"}
+  s.source           = {:git => "https://github.com/azu/TimeRange.git", :tag => s.version.to_s}
+  s.social_media_url = 'https://twitter.com/azu_re'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
-
-  s.source_files = 'Pod/Classes'
-  s.resource_bundles = {
-    'TimeRange' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files     = 'Pod/Classes'
 end
