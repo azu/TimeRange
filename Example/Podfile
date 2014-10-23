@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'TimeRange', :exclusive => true do
+  pod "TimeRange", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "TimeRange", :path => "../"
+
+  
+end
