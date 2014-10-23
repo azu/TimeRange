@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "TimeRange"
-  s.version     = "0.1.0"
+  s.version     = "0.2.0"
   s.summary     = "TimeRange provide check if an NSDate occurs between two other NSDates."
   s.homepage         = "https://github.com/azu/TimeRange"
   s.screenshots      = "http://monosnap.com/image/9NniA7H5i5cnpBnCnC0YU77aPnjbVY.png"

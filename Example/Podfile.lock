@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TimeRange: a76b5bc8a5e563fd8ee41225b0d4b8656850b53c
+  TimeRange: 4b2cecce5832bc04ae392143e174ca66f8d4ae4b
   XCParameterizedTestCase: 84ec9dcb08fdfe0afc19d26771ae70c771af44ff
 
 COCOAPODS: 0.34.4
