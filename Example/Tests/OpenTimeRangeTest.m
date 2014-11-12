@@ -33,8 +33,8 @@
     NSDate *endDate = [formatter dateFromString:self.input[1]];
     NSDate *targetDate = [formatter dateFromString:self.input[2]];
     OpenTimeRange *timeRange = [[OpenTimeRange alloc] init];
-    timeRange.startDate = startDate;
-    timeRange.endDate = endDate;
+    timeRange.aDate = startDate;
+    timeRange.bDate = endDate;
     XCTAssertEqualObjects(@([timeRange contains:targetDate]), self.expected, "%@", timeRange);
 }
 @end

@@ -11,8 +11,9 @@
     Ref. https://codeiq.jp/magazine/2013/11/593/
  */
 @interface TimeRange : NSObject
-@property(nonatomic) NSDate *startDate;
-@property(nonatomic) NSDate *endDate;
+// CAUTION : You should not access directory these property.
+@property(nonatomic, readonly) NSDate *aDate;
+@property(nonatomic, readonly) NSDate *bDate;
 
 + (instancetype)rangeWithStartDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 

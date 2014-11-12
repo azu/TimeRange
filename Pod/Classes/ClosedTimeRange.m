@@ -13,8 +13,8 @@
 
 - (BOOL)contains:(NSDate *) targetData {
     // return begin <= $target && $target < end;
-    return [TimeRangeCompareUtil oneDate:self.startDate isEarlierThanOrEqualDate:targetData] &&
-        [TimeRangeCompareUtil oneDate:targetData isEarlierThanDate:self.endDate];
+    return [TimeRangeCompareUtil oneDate:self.aDate isEarlierThanOrEqualDate:targetData] &&
+        [TimeRangeCompareUtil oneDate:targetData isEarlierThanDate:self.bDate];
 }
 
 

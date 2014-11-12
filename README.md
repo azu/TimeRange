@@ -33,8 +33,9 @@ pod try "TimeRange"
 
 ```objc
 @interface TimeRange : NSObject
-@property(nonatomic) NSDate *startDate;
-@property(nonatomic) NSDate *endDate;
+// CAUTION : You should not access directory these property.
+@property(nonatomic, readonly) NSDate *aDate;
+@property(nonatomic, readonly) NSDate *bDate;
 
 + (instancetype)rangeWithStartDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 
@@ -42,6 +43,7 @@ pod try "TimeRange"
 
 - (BOOL)overlaps:(TimeRange *) anotherTimeRange;
 
+- (NSString *)description;
 @end
 ```
 
@@ -60,9 +62,9 @@ Check if an NSDate is contained TimeRange
 NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 [formatter setCalendar:[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar]];
 [formatter setDateFormat:@"HH:mm:ss"];
-NSDate *startDate = [formatter dateFromString:@"20:00"];
-NSDate *endDate = [formatter dateFromString:@"04:00"];
-TimeRange *timeRange = [TimeRange rangeWithStartDate:startDate endDate:endDate];
+NSDate *aDate = [formatter dateFromString:@"20:00"];
+NSDate *bDate = [formatter dateFromString:@"04:00"];
+TimeRange *timeRange = [TimeRange rangeWithStartDate:aDate bDate:bDate];
 NSDate *targetDate = [formatter dateFromString:@"01:00"];
 [timeRange contains:targetDate];// => YES
 ```
@@ -85,8 +87,8 @@ NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 [formatter setDateFormat:@"HH:mm:ss"];
 NSArray *aRangeData = @[@"04:00:00", @"10:00:00"];
 NSArray *bRangeData = @[@"17:00:00", @"23:00:00"];
-TimeRange *aRange = [TimeRange rangeWithStartDate:[formatter dateFromString:aRangeData[0]] endDate:[formatter dateFromString:aRangeData[1]]];
-TimeRange *bRange = [TimeRange rangeWithStartDate:[formatter dateFromString:bRangeData[0]] endDate:[formatter dateFromString:bRangeData[1]]];
+TimeRange *aRange = [TimeRange rangeWithStartDate:[formatter dateFromString:aRangeData[0]] bDate:[formatter dateFromString:aRangeData[1]]];
+TimeRange *bRange = [TimeRange rangeWithStartDate:[formatter dateFromString:bRangeData[0]] bDate:[formatter dateFromString:bRangeData[1]]];
 [aRange overlaps:bRange];// => NO
 ```
 
