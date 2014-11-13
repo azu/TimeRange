@@ -3,6 +3,6 @@
 language: objective-c
 before_install:
     - gem install cocoapods
-    - cd Example && pod install && cd -
+    - cd Example && pod update && cd -
 script:
 - xcodebuild test -workspace Example/TimeRange.xcworkspace -scheme TimeRange -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
