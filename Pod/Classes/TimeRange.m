@@ -39,7 +39,9 @@
 }
 
 - (BOOL)overlaps:(TimeRange *) anotherTimeRange {
+    // A contain B.(aDate|bDate)?
     return ([anotherTimeRange contains:self.aDate] || [anotherTimeRange contains:self.bDate]) ||
+        // B contain A.(aDate|bDate)?
         ([self contains:anotherTimeRange.aDate] || [self contains:anotherTimeRange.bDate]);
 }
 
