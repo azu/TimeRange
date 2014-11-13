@@ -10,9 +10,6 @@
 
 
 @interface TimeRange ()
-// CAUTION : You should not access directory these property.
-@property(nonatomic, readwrite) NSDate *aDate;
-@property(nonatomic, readwrite) NSDate *bDate;
 @end
 
 @implementation TimeRange {
@@ -42,7 +39,8 @@
 }
 
 - (BOOL)overlaps:(TimeRange *) anotherTimeRange {
-    return [anotherTimeRange contains:self.aDate] || [anotherTimeRange contains:self.bDate];
+    return ([anotherTimeRange contains:self.aDate] || [anotherTimeRange contains:self.bDate]) ||
+        ([self contains:anotherTimeRange.aDate] || [self contains:anotherTimeRange.bDate]);
 }
 
 - (NSString *)description {

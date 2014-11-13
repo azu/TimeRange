@@ -1,5 +1,5 @@
 PODS:
-  - TimeRange (0.1.0)
+  - TimeRange (1.0.0)
   - XCParameterizedTestCase (1.0.1)
 
 DEPENDENCIES:
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TimeRange: 4b2cecce5832bc04ae392143e174ca66f8d4ae4b
+  TimeRange: 5d9c0513818f28c275a755e883ffb90e33f31fd3
   XCParameterizedTestCase: 84ec9dcb08fdfe0afc19d26771ae70c771af44ff
 
 COCOAPODS: 0.34.4

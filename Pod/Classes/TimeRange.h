@@ -12,13 +12,13 @@
  */
 @interface TimeRange : NSObject
 // CAUTION : You should not access directory these property.
-@property(nonatomic, readonly) NSDate *aDate;
-@property(nonatomic, readonly) NSDate *bDate;
+@property(nonatomic) NSDate *aDate;
+@property(nonatomic) NSDate *bDate;
 
 + (instancetype)rangeWithStartDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 
 - (BOOL)contains:(NSDate *) targetData;
-
+// if overlaps between two timeRange, return YES
 - (BOOL)overlaps:(TimeRange *) anotherTimeRange;
 
 - (NSString *)description;
