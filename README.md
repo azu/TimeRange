@@ -92,6 +92,8 @@ TimeRange *bRange = [TimeRange rangeWithStartDate:[formatter dateFromString:bRan
 [aRange overlaps:bRange];// => NO
 ```
 
+![overlap](http://monosnap.com/image/1NnYE3QqA3DdfxCTR9VKkbXGthBufb.png)
+
 ## Contributing
 
 1. Fork it!

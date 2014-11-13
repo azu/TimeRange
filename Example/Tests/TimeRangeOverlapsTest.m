@@ -22,6 +22,15 @@
             @[@"04:00:00", @"10:00:00"],
             @[@"17:00:00", @"23:00:00"]
         ] withExpectedValue:@(NO)],
+        // flip
+        [XCTestCaseData createWithInputValue:@[
+            @[@"17:00:00", @"23:00:00"],
+            @[@"04:00:00", @"10:00:00"]
+        ] withExpectedValue:@(NO)],
+        [XCTestCaseData createWithInputValue:@[
+            @[@"22:00:00", @"03:00:00"],
+            @[@"04:00:00", @"10:00:00"]
+        ] withExpectedValue:@(NO)],
         [XCTestCaseData createWithInputValue:@[
             @[@"04:00:00", @"10:00:00"],
             @[@"22:00:00", @"03:00:00"]
