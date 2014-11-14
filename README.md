@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/TimeRange.svg?style=flat)](http://cocoadocs.org/docsets/TimeRange)
 [![License](https://img.shields.io/cocoapods/l/TimeRange.svg?style=flat)](http://cocoadocs.org/docsets/TimeRange)
 [![Platform](https://img.shields.io/cocoapods/p/TimeRange.svg?style=flat)](http://cocoadocs.org/docsets/TimeRange)
+[![Dependency Status](https://www.versioneye.com/objective-c/timerange/badge.svg?style=flat)](https://www.versioneye.com/objective-c/timerange)
 
 TimeRange provide check if an NSDate occurs between two other NSDates.
 
